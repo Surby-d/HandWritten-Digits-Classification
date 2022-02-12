@@ -23,7 +23,7 @@ print(pred)
 print(predicted_val)
 flag = True
 while flag:
-    cv2.putText(img=display_image, text='Digit: '+str(predicted_val), org=(10, 50), fontFace=cv2.FONT_HERSHEY_DUPLEX, thickness=1, color=(0, 0, 255), fontScale=1)
+    cv2.putText(img=display_image, text='Digit: '+str(predicted_val), org=(10, 50), fontFace=cv2.FONT_HERSHEY_DUPLEX, thickness=1, color=(0, 255, 0), fontScale=1)
     cv2.imshow("Image", display_image)
     k = cv2.waitKey(0) & 0xFF
     if k==27:
